@@ -1,0 +1,62 @@
+{
+  "synchronous_mode": "NORMAL",
+  "accepted": 100,
+  "before_crash": {
+    "PENDING": 52,
+    "LEASED": 8,
+    "RETRY_WAIT": 0,
+    "SUCCEEDED": 40,
+    "FAILED": 0,
+    "UNKNOWN_OUTCOME": 0
+  },
+  "after_recovery": {
+    "PENDING": 0,
+    "LEASED": 0,
+    "RETRY_WAIT": 0,
+    "SUCCEEDED": 88,
+    "FAILED": 8,
+    "UNKNOWN_OUTCOME": 4
+  },
+  "killed_exit_code": -9,
+  "recovery_exit_code": 0,
+  "wal_present_after_sigkill": true,
+  "evidence": {
+    "precompleted_preserved": 40,
+    "precompleted_reexecutions": 0,
+    "unknown_reexecutions": 0,
+    "nonidem_effects_before_crash": 4,
+    "idem_blocker_calls": 8,
+    "idem_blocker_effects": 4,
+    "flaky_calls": 40,
+    "flaky_effects": 20
+  },
+  "checks": {
+    "child_exit_codes": true,
+    "post_crash_wal_observed": true,
+    "accepted_ids_exactly_once": true,
+    "sqlite_integrity": true,
+    "sqlite_foreign_keys": true,
+    "expected_terminal_states": true,
+    "pending_not_invoked_before_crash": true,
+    "ledger_keys": true,
+    "audit_job_ids": true,
+    "manifest_matches_jobs": true,
+    "policies_unchanged": true,
+    "ledger_matches_attempts": true,
+    "per_job_terminal_state": true,
+    "audit_paths": true,
+    "audit_attempts": true,
+    "invocation_phases": true,
+    "precompleted_unchanged": true,
+    "results": true,
+    "deduplicated_effects": true,
+    "unknown_effect_before_crash": true,
+    "fatal_no_effect": true,
+    "precompleted_not_reexecuted": true,
+    "unknown_not_replayed": true,
+    "effect_keys": true
+  },
+  "elapsed_seconds": 2.1482191660325043,
+  "conserved": true,
+  "unfinished": 0
+}

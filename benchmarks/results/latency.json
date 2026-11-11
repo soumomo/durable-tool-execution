@@ -1,0 +1,105 @@
+{
+  "environment": {
+    "cpu": "Apple M4",
+    "implementation": "CPython",
+    "logical_cpus": 10,
+    "machine": "arm64",
+    "os": "macOS-27.2-arm64-arm-64bit",
+    "perf_counter_resolution_ns": 41.66666666666667,
+    "python": "3.11.13",
+    "sqlite": "3.51.2"
+  },
+  "profiled": false,
+  "recorded_at_utc": "2026-11-11T14:13:00.493310+00:00",
+  "results": [
+    {
+      "asyncio_debug": false,
+      "attempts": 1000,
+      "concurrency": 16,
+      "elapsed_seconds": 0.4728855,
+      "jobs": 1000,
+      "jobs_per_second": 2114.676808656641,
+      "latency_ms": {
+        "admission_ack": {
+          "p50_ms": 2.1818545,
+          "p95_ms": 3.24685595,
+          "p99_ms": 3.62943274,
+          "samples": 1000
+        },
+        "admission_commit": {
+          "p50_ms": 2.1464999999999996,
+          "p95_ms": 3.202784,
+          "p99_ms": 3.59143291,
+          "samples": 1000
+        },
+        "completion_commit": {
+          "p50_ms": 2.665583,
+          "p95_ms": 3.6566297999999997,
+          "p99_ms": 4.02751025,
+          "samples": 1000
+        },
+        "end_to_end": {
+          "p50_ms": 7.466979,
+          "p95_ms": 8.0282452,
+          "p99_ms": 8.66706033,
+          "samples": 1000
+        },
+        "queue_dispatch": {
+          "p50_ms": 0.9680625,
+          "p95_ms": 1.6937659999999997,
+          "p99_ms": 1.98583125,
+          "samples": 1000
+        }
+      },
+      "successful_jobs": 1000,
+      "synchronous_mode": "FULL",
+      "warmup_jobs": 100,
+      "workers": 16
+    },
+    {
+      "asyncio_debug": false,
+      "attempts": 1000,
+      "concurrency": 16,
+      "elapsed_seconds": 0.455539584,
+      "jobs": 1000,
+      "jobs_per_second": 2195.198913822602,
+      "latency_ms": {
+        "admission_ack": {
+          "p50_ms": 1.9813334999999999,
+          "p95_ms": 5.440770499999999,
+          "p99_ms": 6.10849325,
+          "samples": 1000
+        },
+        "admission_commit": {
+          "p50_ms": 1.9451245,
+          "p95_ms": 5.40196875,
+          "p99_ms": 6.07471941,
+          "samples": 1000
+        },
+        "completion_commit": {
+          "p50_ms": 2.3308545,
+          "p95_ms": 5.724377399999999,
+          "p99_ms": 15.144870419999998,
+          "samples": 1000
+        },
+        "end_to_end": {
+          "p50_ms": 6.077958,
+          "p95_ms": 10.002964899999998,
+          "p99_ms": 19.112864260000002,
+          "samples": 1000
+        },
+        "queue_dispatch": {
+          "p50_ms": 0.4626665,
+          "p95_ms": 1.3003038499999993,
+          "p99_ms": 3.9012573299999995,
+          "samples": 1000
+        }
+      },
+      "successful_jobs": 1000,
+      "synchronous_mode": "NORMAL",
+      "warmup_jobs": 100,
+      "workers": 16
+    }
+  ],
+  "schema_version": 1
+}
